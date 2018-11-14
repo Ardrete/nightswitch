@@ -69,6 +69,11 @@
 					"default": false,
 					"description": "(Priority 3) Specifies whether to geolocate user. Please note that by setting this to true you give permission to infer your location with your IP address."
 				},
+				"nightswitch.checkDarkMode": {
+					"type": "boolean",
+					"default": false,
+					"description": "(Priority 0) Specifies whether to checkDarkMode is enabled. It's exclusive for Mac OSX"
+				},
 				"nightswitch.sunrise": {
 					"type": [
 						"string",
@@ -100,7 +105,9 @@
 		"test": "node ./node_modules/vscode/bin/test"
 	},
 	"dependencies": {
+		"dark-mode": "^3.0.0",
 		"geoip-lite": "^1.3.1",
+		"os": "^0.1.1",
 		"public-ip": "^2.3.5",
 		"suncalc": "^1.8.0"
 	},
